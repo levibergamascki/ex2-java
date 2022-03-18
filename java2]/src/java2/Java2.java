@@ -17,18 +17,23 @@ public class Java2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.print("Digite um número: ");
+        int x = 0, result = 0, qtdNum = 0;
         Scanner num = new Scanner(System.in);
         
-        int num1;
-
-        num1 = num.nextInt();
-        do {
-            System.out.print("Digite outro número: ");
-            Scanner num2 = new Scanner(System.in);
-            int num2i = num2.nextInt();
+       
+        while(x >=0) {
+            System.out.print("Digite um número inteiro: ");
+                    x = num.nextInt();
+                    qtdNum += 1;
+            if(x >=0){
+            result+= x;
+            }
+            else {
+            result = result/(qtdNum - 1);
+            System.out.print(result);
+            }
              
-        } while(num1 >= 0 );
+        } 
         
         
      
